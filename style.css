@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.gridContainer {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.square {
+    border: 1px solid #212121;
+    transition: .2s;
+}
+
+.figureContainer {
+    margin: 20px;
+}
+
+.firstFigure {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #212121;
+    background-color: rgb(109, 109, 245);
+    cursor: grab;
+
+}
+
+.counterPoints {
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.dragFigure {
+    cursor: grabbing;
+    opacity: 0.5;
+}
+
+.filledSquare {
+    background-color: rgb(109, 109, 245);
+}
